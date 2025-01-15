@@ -7,9 +7,9 @@
 <h2>kategori güncelleme sayfası</h2>
 <div class="container">
     <form method="post">
-        @Html.HiddenFor(x=>x.Id)
+        @Html.HiddenFor(x => x.Id)
         <label>kategori adı</label>
-        <input type="text" name="Name" class="form-control" />
+        @Html.TextBoxFor(x => x.Name, new {@class="form-control"})
         <br />
         <button class="btn btn-info">kategoriyi kaydet</button>
     </form>
